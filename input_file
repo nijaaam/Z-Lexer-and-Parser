@@ -1,0 +1,40 @@
+fdef int foo( int pos ) { 
+	if (a == 5) then
+		return 0;
+	else 
+		return 1;
+	fi	
+	return foo(pos-1) + foo(pos-2);
+} ;
+
+main {
+    dict<dict<int,int>,dict<int,int>> a = { 1:1, 2:2, 3:3 } ;
+int b = 10;
+jdfaskjk c = "s"a^_)^&&)¬!£$%^&*()_+}{@:L><M";;
+ssf x = ":@{}{}:@~~@:@~:?<?>?><?><";
+
+top s = 4;
+    seq<rat> f = [ 1/2, 3, 4_2/17, -7, -7/5, -7.5];
+
+	seq<int> a = [1, 2, 3];
+forall(n in a) do
+print n * 2;
+od
+	return;
+};
+
+fdef fsafsa add (int x, int f){
+	int x = 0;
+	return x;
+};
+
+fdef int add (int x, int y) {
+    if (x == y) then
+        x = 5;
+        if (y == 9) then
+            y = 6;
+
+        fi
+    fi
+	return x + y;
+} ;

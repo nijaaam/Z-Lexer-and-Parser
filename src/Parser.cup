@@ -1,0 +1,25 @@
+import java_cup.runtime.*;
+
+parser code{:
+	public boolean syntaxErrors = false;
+	public void syntax_error(Symbol current_token) {
+		syntaxErrors = true;
+		report_error(
+			"Syntax error at line " + (current_token.left+1) + ", column " + current_token.right, null
+		);
+	}
+:}
+
+
+terminal IDENTIFIER, BOOLEAN; 
+terminal CHARACTER,INTEGER,RATIONAL,STRING; 
+terminal CHAR, BOOL, INT, RAT, FLOAT, TOP, DICT, SEQ;
+terminal TDEF, FDEF, ALIAS, MAIN, VOID;
+terminal PLUS, MINUS, DIV, MULT, POW, ASSIGN;
+terminal EQ, NOTEQ, NOT, LESS, LESSEQ, AND, OR;
+terminal IF,ELSE,ELIF,THEN,FI,WHILE, DO,OD,FORALL,IN, RETURN;
+terminal READ, PRINT;
+terminal LBRACE, RBRACE, LPAREN, RPAREN, SEMIC, LBRACK, RBRACK, MORESIGN, COMMA, DOT, COLON;
+terminal CAT, LEN;
+terminal BADCHAR, FLOAT_LIT;
+
